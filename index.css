@@ -48,7 +48,7 @@ width: calc(25% - 10px);
     
   }
   button:hover{
-    
+    color: #e71e04;
   }
   
   input[type=button]{
