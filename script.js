@@ -12,18 +12,18 @@ let secondCard = false;
 
 
 const items = [
-  { name: "bee", image: "./images/ang.jpg" },
-  { name: "crocodile", image: "./images/ang.jpg" },
-  { name: "macaw", image: "./images/html.jpg" },
-  { name: "gorilla", image: "./images/html.jpg"},
-  { name: "tiger", image:  "./images/phpblue.jpg"},
-  { name: "monkey", image:  "./images/phpblue.jpg"},
-  { name: "chameleon", image: "./images/js.jpg" },
-  { name: "piranha", image: "./images/js.jpg" },
-  { name: "anaconda", image: "./images/php.jpg" },
-  { name: "sloth", image: "./images/php.jpg" },
-  { name: "cockatoo", image:  "./images/phpblack.jpg"},
-  { name: "toucan", image: "./images/phpblack.jpg" },
+  { name: "ang", image: "./images/ang.jpg" },
+  { name: "ang", image: "./images/ang.jpg" },
+  { name: "html", image: "./images/html.jpg" },
+  { name: "html", image: "./images/html.jpg"},
+  { name: "phpblue", image:  "./images/phpblue.jpg"},
+  { name: "phpblue", image:  "./images/phpblue.jpg"},
+  { name: "js", image: "./images/js.jpg" },
+  { name: "js", image: "./images/js.jpg" },
+  { name: "php", image: "./images/php.jpg" },
+  { name: "php", image: "./images/php.jpg" },
+  { name: "phpblack", image:  "./images/phpblack.jpg"},
+  { name: "phpblack", image: "./images/phpblack.jpg" },
 ];
 
 let seconds = 0,
