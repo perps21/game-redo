@@ -19,6 +19,8 @@
     border-radius: 0.6em;
     box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
   }
+
+  
   .game-container {
     position: relative;
     width: 100%;
@@ -60,6 +62,9 @@
   .card-after {
     background-color: #ffffff;
     transform: rotateY(180deg);
+  }
+  .card-after img {
+    width: 100%;
   }
   .card-container.flipped .card-before {
     transform: rotateY(180deg);
