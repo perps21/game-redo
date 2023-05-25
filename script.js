@@ -32,27 +32,27 @@ let seconds = 0,
 let movesCount = 0,
   winCount = 0;
 
-//For timer
+
 const timeGenerator = () => {
   seconds += 1;
-  //minutes logic
+  
   if (seconds >= 60) {
     minutes += 1;
     seconds = 0;
   }
-  //format time before displaying
+  
   let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
   let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
   timeValue.innerHTML = `<span>Time: </span>${minutesValue}:${secondsValue}`;
 };
 
-//For calculating moves
+
 const movesCounter = () => {
   movesCount += 1;
   moves.innerHTML = `<span>Moves: </span>${movesCount}`;
 };
 
-//Pick random objects from the items array
+
 const generateRandom = (size = 4) => {
   //temporary array
   let tempArray = [...items];
