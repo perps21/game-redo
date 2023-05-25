@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    
   }
   
   .card {
@@ -34,6 +35,14 @@ width: calc(25% - 10px);
   .card:active {
     transform: scale(0.97);
     transition: transform .2s;
+  }
+
+  button{
+    width: 200px;
+    margin-left:30%;
+    background:red;
+    height: 50px;
+    margin-top: 500px;
   }
   
   .front,
