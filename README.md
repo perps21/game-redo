@@ -1,8 +1,9 @@
-# Tile matching game
-
+# Title
+Tile matching game
 
 # Description
-This website helps you choose the car you want to purchase or rent. it also tells you who Rocarstor are what they do and the services they offer. it also has an app you can download and you can also subscribe to their services through your email. the website also tells you the type of cars which are available.
+Tile matching game is a puzzle game where you match two identical tiles with the same pattern or type to clear them from the game board in order to win the game.
+
 
 # Languages used
 HTML  CSS and JavaScripr
