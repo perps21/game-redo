@@ -54,17 +54,17 @@ const movesCounter = () => {
 
 
 const generateRandom = (size = 4) => {
-  //temporary array
+  
   let tempArray = [...items];
-  //initializes cardValues array
+  
   let cardValues = [];
-  //size should be double (4*4 matrix)/2 since pairs of objects would exist
+  
   size = (size * size) / 2;
-  //Random object selection
+  
   for (let i = 0; i < size; i++) {
     const randomIndex = Math.floor(Math.random() * tempArray.length);
     cardValues.push(tempArray[randomIndex]);
-    //once selected remove the object from temp array
+    
     tempArray.splice(randomIndex, 1);
   }
   return cardValues;
@@ -73,15 +73,10 @@ const generateRandom = (size = 4) => {
 const matrixGenerator = (cardValues, size = 4) => {
   gameContainer.innerHTML = "";
   cardValues = [...cardValues, ...cardValues];
-  //simple shuffle
+  
   cardValues.sort(() => Math.random() - 0.5);
   for (let i = 0; i < size * size; i++) {
-    /*
-        Create Cards
-        before => front side (contains question mark)
-        after => back side (contains actual image);
-        data-card-values is a custom attribute which stores the names of the cards to match later
-      */
+ 
     gameContainer.innerHTML += `
      <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
@@ -90,10 +85,10 @@ const matrixGenerator = (cardValues, size = 4) => {
      </div>
      `;
   }
-  //Grid
+  
   gameContainer.style.gridTemplateColumns = `repeat(${size},auto)`;
 
-  //Cards
+  
   cards = document.querySelectorAll(".card-container");
   cards.forEach((card) => {
     card.addEventListener("click", () => {
