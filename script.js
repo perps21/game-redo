@@ -87,25 +87,17 @@ const matrixGenerator = (cardValues, size = 4) => {
   }
   
   gameContainer.style.gridTemplateColumns = `repeat(${size},auto)`;
-
-  
-  cards = document.querySelectorAll(".card-container");
+ cards = document.querySelectorAll(".card-container");
   cards.forEach((card) => {
     card.addEventListener("click", () => {
-      //If selected card is not matched yet then only run (i.e already matched card when clicked would be ignored)
       if (!card.classList.contains("matched")) {
-        //flip the cliked card
-        card.classList.add("flipped");
-        //if it is the firstcard (!firstCard since firstCard is initially false)
+      card.classList.add("flipped");
         if (!firstCard) {
-          //so current card will become firstCard
-          firstCard = card;
-          //current cards value becomes firstCardValue
+        firstCard = card;
           firstCardValue = card.getAttribute("data-card-value");
         } else {
-          //increment moves since user selected second card
           movesCounter();
-          //secondCard and value
+          
           secondCard = card;
           let secondCardValue = card.getAttribute("data-card-value");
           if (firstCardValue == secondCardValue) {
